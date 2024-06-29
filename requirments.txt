@@ -1,5 +1,4 @@
 # requirments.txt
 snowflake-connector-python
 snowflake-snowpark-python
-pip install --upgrade --force-reinstall -r requirements.txt
 streamlit==1.31.1
