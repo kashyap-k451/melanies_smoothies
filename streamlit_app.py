@@ -1,7 +1,15 @@
 # Import python packages
 import streamlit as st
-pip install snowflake-connector-python
+import snowflake.connector
 from snowflake.snowpark.functions import col
+cnx = snowflake.connector.connect(
+    user='SNOW24',
+    password='Snow@badge_3',
+    account='ACCOUNTADMIN',
+    warehouse='COMPUTE_WH',
+    database='SMOOTHIES',
+    schema='PUBLIC'
+)
 
 # Write directly to the app
 st.title(":cup_with_straw: Customize your Smoothie! :cup_with_straw:")
